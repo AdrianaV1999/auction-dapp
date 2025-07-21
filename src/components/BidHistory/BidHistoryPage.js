@@ -15,11 +15,16 @@ const BidHistoryPage = () => {
     if (window.ethereum) {
       const web3Instance = new Web3(window.ethereum);
       setWeb3(web3Instance);
+
       window.ethereum
         .request({ method: "eth_requestAccounts" })
         .then((accounts) => {
           setAccount(accounts[0]);
         });
+
+      window.ethereum.on("accountsChanged", (newAccounts) => {
+        setAccount(newAccounts[0]);
+      });
     }
   }, []);
 
