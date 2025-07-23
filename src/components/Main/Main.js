@@ -14,11 +14,11 @@ const Main = () => {
   const connectWallet = async () => {
     try {
       if (window.ethereum) {
+        const web3Instance = new Web3(window.ethereum);
+        setWeb3(web3Instance);
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
-        const web3Instance = new Web3(window.ethereum);
-        setWeb3(web3Instance);
         setAccount(accounts[0]);
 
         window.ethereum.on("accountsChanged", (newAccounts) => {
@@ -34,8 +34,6 @@ const Main = () => {
 
   useEffect(() => {
     if (window.ethereum) {
-      const web3Instance = new Web3(window.ethereum);
-      setWeb3(web3Instance);
       connectWallet();
     } else {
       console.log("MetaMask nije instaliran.");
