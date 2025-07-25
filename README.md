@@ -63,6 +63,8 @@ To run this project locally:
    
    #### `npm start`
 
+This app is configured to run on the **Sepolia** test network. Make sure to switch MetaMask to the correct network.
+
 ---
 
 This project shows applied work with Web3 integration, smart contract deployment and building a decentralized app using frontend technologies.
