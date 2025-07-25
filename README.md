@@ -1,7 +1,5 @@
 # Auction dApp
 
----
-
 This decentralized application (dApp) enables users to create and participate in blockchain-based auctions. It is built with **React** for the frontend and **Solidity** for smart contract logic. **MetaMask** is used to connect users to the Ethereum blockchain and **Web3.js** handles the interaction between the app and the smart contracts. To use this application, the user must have a MetaMask account installed in their browser.
 
 ## Features
