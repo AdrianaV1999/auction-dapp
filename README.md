@@ -40,7 +40,7 @@ This decentralized application (dApp) enables users to create and participate in
 ## Smart Contracts
 
 - **Auction.sol** — Handles bidding logic, bid history, winner payout and secret code delivery. Includes support for bid withdrawals and accessing bids by user
-- **AuctionFactory.sol** — Deploys new auctions and stores references to all created contracts
+- **AuctionFactory.sol** — Deploys new auctions and stores references to all created auctions
 - **Auction.json / AuctionFactory.json** — ABI files used by Web3.js to connect the frontend with the smart contracts
 
 ---
