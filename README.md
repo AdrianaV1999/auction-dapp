@@ -34,7 +34,7 @@ This decentralized application (dApp) enables users to create and participate in
 - **AuctionDetailsModal** — Displays auction details
 - **AuctionList** — Shows a list of available auctions
 - **CreateAuctionModal** — Form for creating new auctions
-- **CreateAuctionModal** — Shows the connected user's bids across all auctions
+- **BidHistory** — Shows the connected user's bids across all auctions
 - **BidHistoryPage** — Dedicated page showing the user’s bidding history
 
 ## Smart Contracts
