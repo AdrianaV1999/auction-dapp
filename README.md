@@ -47,18 +47,21 @@ This decentralized application (dApp) enables users to create and participate in
 
 To run this project locally:
 
-1. Clone the repository:  
+1. Clone the repository:
+   
    `git clone https://github.com/AdrianaV1999/auction-dapp.git`
 
-2. Navigate into the project folder:  
+2. Navigate into the project folder:
+
    `cd auction-dapp`
 
-3. Install dependencies:  
+3. Install dependencies:
+   
    `npm install`
 
-4. Start the development server:  
+4. Start the development server:
+   
    `npm start`  
-   The app will be available at `http://localhost:3000`.
 
 ---
 
