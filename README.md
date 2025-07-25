@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Auction dApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This decentralized application (dApp) enables users to create and participate in blockchain-based auctions. It is built with **React** for the frontend and **Solidity** for smart contract logic. **MetaMask** is used to connect users to the Ethereum blockchain and **Web3.js** handles the interaction between the app and the smart contracts. To use this application, the user must have a MetaMask account installed in their browser.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Create auctions with:
+  - Minimum duration
+  - Recipient address for funds
+  - Secret code (e.g., PDF link, QR or password) revealed only to the winner
+- Place bids if:
+  - The auction is still active
+  - The bid is higher than the current highest
+- Bids are locked as long as they are the highest
+- Withdraw funds if outbid
+- End auction (only the creator can do this after the set duration)
+- Reveal the secret code to the winning bidder
+- Check:
+  - Auction end time
+  - Recipient address
+  - Highest bid and bidder address
+- View personal bid history (auctions you participated in, your bid amounts and timestamps)
 
-### `npm start`
+## Technologies and Tools Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js** — Frontend interface for building UI components  
+- **Solidity** — Programming language for writing smart contracts on Ethereum  
+- **Web3.js** — JavaScript library for interacting with the Ethereum blockchain  
+- **MetaMask** — Wallet used to manage Ethereum accounts and sign blockchain transactions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+- **Main.js** — The landing page of the application
+- **AuctionDetailsModal** — Displays auction details
+- **AuctionList** — Shows a list of available auctions
+- **CreateAuctionModal** — Form for creating new auctions
+- **CreateAuctionModal** — Shows the connected user's bids across all auctions
+- **BidHistoryPage** — Dedicated page showing the user’s bidding history
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Smart Contracts
 
-### `npm run build`
+- **Auction.sol** — Handles bidding logic, bid history, winner payout and secret code delivery. Includes support for bid withdrawals and accessing bids by user
+- **AuctionFactory.sol** — Deploys new auctions and stores references to all created contracts
+- **Auction.json / AuctionFactory.json** — ABI files used by Web3.js to connect the frontend with the smart contracts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project shows applied work with Web3 integration, smart contract deployment and building a decentralized app using frontend technologies.
