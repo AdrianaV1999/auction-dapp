@@ -43,6 +43,23 @@ This decentralized application (dApp) enables users to create and participate in
 - **AuctionFactory.sol** — Deploys new auctions and stores references to all created auctions
 - **Auction.json / AuctionFactory.json** — ABI files used by Web3.js to connect the frontend with the smart contracts
 
+## Installation / How to Run
+
+To run this project locally:
+
+1. Clone the repository:  
+   `git clone https://github.com/AdrianaV1999/auction-dapp.git`
+
+2. Navigate into the project folder:  
+   `cd auction-dapp`
+
+3. Install dependencies:  
+   `npm install`
+
+4. Start the development server:  
+   `npm start`  
+   The app will be available at `http://localhost:3000`.
+
 ---
 
 This project shows applied work with Web3 integration, smart contract deployment and building a decentralized app using frontend technologies.
