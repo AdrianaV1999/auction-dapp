@@ -30,7 +30,7 @@ This decentralized application (dApp) enables users to create and participate in
 
 ## Components
 
-- **Main.js** — The landing page of the application
+- **Main** — The landing page of the application
 - **AuctionDetailsModal** — Displays auction details
 - **AuctionList** — Shows a list of available auctions
 - **CreateAuctionModal** — Form for creating new auctions
