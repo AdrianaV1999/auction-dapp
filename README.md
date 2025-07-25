@@ -53,7 +53,7 @@ To run this project locally:
 
 2. Navigate into the project folder:
 
-   #### `cd auction-dapp`
+   ##### `cd auction-dapp`
 
 3. Install dependencies:
    
@@ -63,7 +63,7 @@ To run this project locally:
    
    #### `npm start`
 
-This app is configured to run on the **Sepolia** test network. Make sure to switch MetaMask to the correct network.
+This will start the app locally at: `http://localhost:3000`
 
 ---
 
