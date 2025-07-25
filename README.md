@@ -49,19 +49,19 @@ To run this project locally:
 
 1. Clone the repository:
    
-   `git clone https://github.com/AdrianaV1999/auction-dapp.git`
+   #### `git clone https://github.com/AdrianaV1999/auction-dapp.git`
 
 2. Navigate into the project folder:
 
-   `cd auction-dapp`
+   #### `cd auction-dapp`
 
 3. Install dependencies:
    
-   `npm install`
+   #### `npm install`
 
 4. Start the development server:
    
-   `npm start`  
+   #### `npm start`
 
 ---
 
