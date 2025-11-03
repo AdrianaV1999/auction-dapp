@@ -1,19 +1,19 @@
-# Auction dApp
+# Auction DApp
 
-This decentralized application (dApp) enables users to create and participate in blockchain-based auctions. It is built with **React** for the frontend and **Solidity** for smart contract logic. **MetaMask** is used to connect users to the Ethereum blockchain and **Web3.js** handles the interaction between the app and the smart contracts. To use this application, the user must have a MetaMask account installed in their browser.
+This decentralized application (dApp) enables users to create and participate in **blockchain-based** auctions. It is built with **React.js** for the frontend and **Solidity** for smart contract logic on the **Ethereum** blockchain. **MetaMask** is used to connect user's Ethereum accounts and securely authorize transactions. **Web3.js** is used to interact with Ethereum, allowing the frontend to call smart contract functions, read contract data and initiate transactions via MetaMask. To send transactions, the user must have a MetaMask account installed in their browser.
 
 ## Features
 
 - Create auctions with:
   - Minimum duration
-  - Recipient address for funds
-  - Secret code (e.g., PDF link, QR or password) revealed only to the winner
+  - Recipient Ethereum address for funds
+  - Secret code revealed only to the winner
 - Place bids if:
   - The auction is still active
   - The bid is higher than the current highest
 - Bids are locked as long as they are the highest
 - Withdraw funds if outbid
-- End auction (only the creator can do this after the set duration)
+- End auction (only the creator can do this after the duration has ended)
 - Reveal the secret code to the winning bidder
 - Check:
   - Auction end time
@@ -25,7 +25,7 @@ This decentralized application (dApp) enables users to create and participate in
 
 - **React.js** — Frontend interface for building UI components  
 - **Solidity** — Programming language for writing smart contracts on Ethereum  
-- **Web3.js** — JavaScript library for interacting with the Ethereum blockchain  
+- **Web3.js** — JavaScript library for interacting with Ethereum, allowing the frontend to communicate with smart contracts, read contract data and send transactions
 - **MetaMask** — Wallet used to manage Ethereum accounts and sign blockchain transactions
 
 ## Components
@@ -67,4 +67,4 @@ This will start the app locally at: `http://localhost:3000`
 
 ---
 
-This project shows applied work with Web3 integration, smart contract deployment and building a decentralized app using frontend technologies.
+This project showcases practical experience with building a decentralized application, including frontend integration with Web3.js and deployment of smart contracts on the Ethereum blockchain.
